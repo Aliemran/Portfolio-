@@ -1,0 +1,94 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a modern background */
+body {
+    background: #f0f0f0; /* Slightly darker gray background */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Style the header section */
+#header {
+    background: linear-gradient(135deg, #e74c3c, #3498db); /* Slightly darker gradient background */
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change the font */
+}
+
+#header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#header p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Style the main content sections */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change the font */
+}
+
+#about, #accomplishments {
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: #444; /* Slightly darker text color */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555; /* Slightly darker text color */
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Style links */
+a {
+    text-decoration: none;
+    color: #007BFF; /* Blue link color */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style the accomplishments section with a new color */
+#accomplishments {
+    background: #ffcc29; /* Vibrant yellow background */
+    color: #333;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.accomplishment-item {
+    margin: 10px 0;
+}
+
+/* Style the about me section with a new color */
+#about {
+    background: #27ae60; /* Slightly darker green background */
+    color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
