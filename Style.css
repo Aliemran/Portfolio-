@@ -1,0 +1,90 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: #003366; /* Deep blue */
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #001a33; /* Darker shade of blue for the navbar */
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #002b4d; /* A bit brighter blue for hover */
+}
+
+.content {
+    padding: 60px 20px;
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+}
+
+.profile-image {
+    width: 200px;              /* Adjust as per your preference */
+    height: 200px;             /* Adjust to keep the image square */
+    border-radius: 20px;       /* Slight curve to the corners */
+    box-shadow: 5px 5px 15px rgba(78, 58, 58, 0.3);   /* Drop shadow */
+    transition: transform 0.3s ease;   /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.profile-image:hover {
+    transform: scale(1.1);    /* Image will grow by 10% on hover */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+/* Container for paragraphs */
+.container {
+    background-color: #00509e; /* Medium blue */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Animation for the navbar on scroll */
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.backgroundColor = 'rgba(0, 26, 51, 0.95)';
+    } else {
+        navbar.style.backgroundColor = '#001a33';
+    }
+});
